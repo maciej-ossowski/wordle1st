@@ -34,7 +34,7 @@ const Keyboard: React.FC<KeyboardProps> = ({ onKeyPress, usedLetters = {} }) => 
 
   return (
     <div className="w-full max-w-lg mx-auto">
-      <div className="bg-white rounded-lg shadow-lg px-1 py-2">
+      <div className="bg-white rounded-lg shadow-lg px-3 py-4">
         <div className="flex flex-col gap-2">
           {rows.map((row, i) => (
             <div key={i} className="flex justify-center gap-1.5">
