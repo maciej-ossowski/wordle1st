@@ -24,7 +24,7 @@ const GameBoard: React.FC<GameBoardProps> = ({
   };
 
   const getTileClass = (letter: string, index: number = -1, guess: string = '') => {
-    const baseClass = "w-14 h-14 border-2 flex items-center justify-center text-2xl font-bold uppercase transition-colors";
+    const baseClass = "w-12 h-12 sm:w-14 sm:h-14 border-2 flex items-center justify-center text-xl sm:text-2xl font-bold uppercase transition-colors";
     
     if (!letter) return `${baseClass} border-gray-200`;
     
@@ -46,10 +46,10 @@ const GameBoard: React.FC<GameBoardProps> = ({
   };
 
   return (
-    <div className="grid gap-2">
+    <div className="grid gap-1.5 sm:gap-2">
       {/* Previous guesses */}
       {guesses.map((guess, i) => (
-        <div key={i} className="grid grid-cols-5 gap-2">
+        <div key={i} className="grid grid-cols-5 gap-1.5 sm:gap-2">
           {guess.split('').map((letter, j) => (
             <div
               key={j}
@@ -63,7 +63,7 @@ const GameBoard: React.FC<GameBoardProps> = ({
 
       {/* Current guess */}
       {guesses.length < maxGuesses && (
-        <div className="grid grid-cols-5 gap-2">
+        <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
           {currentGuess.split('').map((letter, i) => (
             <div
               key={i}
@@ -85,7 +85,7 @@ const GameBoard: React.FC<GameBoardProps> = ({
 
       {/* Empty rows */}
       {emptyRows.map((_, i) => (
-        <div key={i} className="grid grid-cols-5 gap-2">
+        <div key={i} className="grid grid-cols-5 gap-1.5 sm:gap-2">
           {Array(wordLength)
             .fill('')
             .map((_, j) => (

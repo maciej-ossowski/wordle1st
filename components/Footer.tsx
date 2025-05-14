@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 flex flex-col items-center">
             <h3 className="text-lg font-semibold mb-4">Company</h3>
-            <ul className="space-y-2 text-left">
+            <ul className="space-y-2 text-center sm:text-left w-full">
               <li>
                 <Link href="/" className="text-gray-600 hover:text-gray-900">
                   Home
@@ -31,7 +31,7 @@ const Footer = () => {
           {/* Help Section */}
           <div className="col-span-1 flex flex-col items-center">
             <h3 className="text-lg font-semibold mb-4">Help</h3>
-            <ul className="space-y-2 text-left">
+            <ul className="space-y-2 text-center sm:text-left w-full">
               <li>
                 <Link href="/terms" className="text-gray-600 hover:text-gray-900">
                   Terms and Conditions
@@ -65,8 +65,9 @@ const Footer = () => {
                 </svg>
               </a>
               <a href="https://tiktok.com/@carry1st" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M15 4.5c1 0 2-.5 2.5-1v1c1 0 2-.5 2.5-1v10c0 4.5-5 7-8.5 4.5-2.5-2-1.5-6 2-6V7c-1.5 0-3 .5-4 2-1.5 2-1.5 5.5 0 7.5 2.5 3.5 8.5 2.5 9.5-2V2.5c-.5.5-1.5 1-2 1v1z"/>
+                <svg className="w-6 h-6" viewBox="0 0 24 24">
+                  <path d="M0 0h24v24H0z" fill="currentColor"/>
+                  <path d="M16.5 5.5h3v4.5c0 4.5-5.5 8.5-10.5 5.5-3-2-2-7 2.5-7V12c-3 0-3 4 0 4 4 0 4-4.5 4-7V5.5h1z" fill="white"/>
                 </svg>
               </a>
             </div>
